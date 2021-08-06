@@ -1,0 +1,8 @@
+
+all: 	proj3
+
+proj3: inputbuf.o inputbuf.o lexer.o lexer.o
+	g++ inputbuf.cc inputbuf.h lexer.cc lexer.h -o proj3
+
+clean:
+	rm *.output
